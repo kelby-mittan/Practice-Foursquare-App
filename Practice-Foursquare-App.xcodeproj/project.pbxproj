@@ -12,6 +12,7 @@
 		02699B7C2401F63F00211C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02699B7B2401F63F00211C0F /* Assets.xcassets */; };
 		02699B7F2401F63F00211C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02699B7D2401F63F00211C0F /* LaunchScreen.storyboard */; };
 		02699B8A2401F63F00211C0F /* Practice_Foursquare_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699B892401F63F00211C0F /* Practice_Foursquare_AppTests.swift */; };
+		02699B982401F86300211C0F /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699B972401F86300211C0F /* configure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		02699B852401F63F00211C0F /* Practice-Foursquare-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice-Foursquare-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02699B892401F63F00211C0F /* Practice_Foursquare_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_Foursquare_AppTests.swift; sourceTree = "<group>"; };
 		02699B8B2401F63F00211C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02699B972401F86300211C0F /* configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				02699B722401F63A00211C0F /* AppDelegate.swift */,
 				02699B742401F63A00211C0F /* SceneDelegate.swift */,
+				02699B972401F86300211C0F /* configure.swift */,
 				02699B7B2401F63F00211C0F /* Assets.xcassets */,
 				02699B7D2401F63F00211C0F /* LaunchScreen.storyboard */,
 			);
@@ -219,6 +222,7 @@
 			files = (
 				02699B732401F63A00211C0F /* AppDelegate.swift in Sources */,
 				02699B752401F63A00211C0F /* SceneDelegate.swift in Sources */,
+				02699B982401F86300211C0F /* configure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

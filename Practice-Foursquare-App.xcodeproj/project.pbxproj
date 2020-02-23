@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		02699B7F2401F63F00211C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02699B7D2401F63F00211C0F /* LaunchScreen.storyboard */; };
 		02699B8A2401F63F00211C0F /* Practice_Foursquare_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699B892401F63F00211C0F /* Practice_Foursquare_AppTests.swift */; };
 		02699B982401F86300211C0F /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699B972401F86300211C0F /* configure.swift */; };
+		02699B9B2401F8E800211C0F /* FoursquareSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699B9A2401F8E800211C0F /* FoursquareSearch.swift */; };
+		02699B9F2401FA1A00211C0F /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 02699B9E2401FA1A00211C0F /* ImageKit */; };
+		02699BA12401FA4D00211C0F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA02401FA4D00211C0F /* TabBarController.swift */; };
+		02699BA32401FAED00211C0F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA22401FAED00211C0F /* MapViewController.swift */; };
+		02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA42401FD3000211C0F /* UserCollectionsController.swift */; };
+		02699BA72401FD8000211C0F /* TheMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA62401FD8000211C0F /* TheMapView.swift */; };
+		02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA82401FDC700211C0F /* UserCollectionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,12 @@
 		02699B892401F63F00211C0F /* Practice_Foursquare_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_Foursquare_AppTests.swift; sourceTree = "<group>"; };
 		02699B8B2401F63F00211C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02699B972401F86300211C0F /* configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configure.swift; sourceTree = "<group>"; };
+		02699B9A2401F8E800211C0F /* FoursquareSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareSearch.swift; sourceTree = "<group>"; };
+		02699BA02401FA4D00211C0F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		02699BA22401FAED00211C0F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		02699BA42401FD3000211C0F /* UserCollectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsController.swift; sourceTree = "<group>"; };
+		02699BA62401FD8000211C0F /* TheMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMapView.swift; sourceTree = "<group>"; };
+		02699BA82401FDC700211C0F /* UserCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02699B9F2401FA1A00211C0F /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,8 @@
 		02699B712401F63A00211C0F /* Practice-Foursquare-App */ = {
 			isa = PBXGroup;
 			children = (
+				02699B9C2401F95500211C0F /* APIClients */,
+				02699B992401F8CE00211C0F /* Models */,
 				02699B962401F6BE00211C0F /* Controllers */,
 				02699B952401F6AE00211C0F /* Views */,
 				02699B942401F69E00211C0F /* Supporting Files */,
@@ -109,6 +125,8 @@
 		02699B952401F6AE00211C0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02699BA62401FD8000211C0F /* TheMapView.swift */,
+				02699BA82401FDC700211C0F /* UserCollectionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,8 +134,26 @@
 		02699B962401F6BE00211C0F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				02699BA02401FA4D00211C0F /* TabBarController.swift */,
+				02699BA22401FAED00211C0F /* MapViewController.swift */,
+				02699BA42401FD3000211C0F /* UserCollectionsController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		02699B992401F8CE00211C0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02699B9A2401F8E800211C0F /* FoursquareSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02699B9C2401F95500211C0F /* APIClients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIClients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +172,9 @@
 			dependencies = (
 			);
 			name = "Practice-Foursquare-App";
+			packageProductDependencies = (
+				02699B9E2401FA1A00211C0F /* ImageKit */,
+			);
 			productName = "Practice-Foursquare-App";
 			productReference = 02699B6F2401F63A00211C0F /* Practice-Foursquare-App.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 02699B662401F63A00211C0F;
+			packageReferences = (
+				02699B9D2401FA1A00211C0F /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 02699B702401F63A00211C0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,8 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */,
+				02699B9B2401F8E800211C0F /* FoursquareSearch.swift in Sources */,
+				02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */,
+				02699BA32401FAED00211C0F /* MapViewController.swift in Sources */,
 				02699B732401F63A00211C0F /* AppDelegate.swift in Sources */,
 				02699B752401F63A00211C0F /* SceneDelegate.swift in Sources */,
+				02699BA72401FD8000211C0F /* TheMapView.swift in Sources */,
+				02699BA12401FA4D00211C0F /* TabBarController.swift in Sources */,
 				02699B982401F86300211C0F /* configure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +529,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02699B9D2401FA1A00211C0F /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02699B9E2401FA1A00211C0F /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02699B9D2401FA1A00211C0F /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02699B672401F63A00211C0F /* Project object */;
 }

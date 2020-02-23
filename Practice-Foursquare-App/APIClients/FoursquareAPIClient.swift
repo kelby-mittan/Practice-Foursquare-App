@@ -1,0 +1,40 @@
+//
+//  FoursquareAPIClient.swift
+//  Practice-Foursquare-App
+//
+//  Created by Kelby Mittan on 2/22/20.
+//  Copyright © 2020 Kelby Mittan. All rights reserved.
+//
+
+import Foundation
+import NetworkHelper
+
+struct FoursquareAPIClient {
+    
+    static func getVenues(for location: String, with search: String, completion: @escaping (Result<[Venue] ,AppError>) -> ()) {
+        
+        let foursquareEndpoint = "https://api.foursquare.com/v2/venues/search?client_id=\(APIKeys.id)&client_secret=\(APIKeys.secret)&v=20202002&near=\(location)&intent=browse&radius=10000&query=\(search)&limit=50"
+        
+        guard let url = URL(string: foursquareEndpoint) else {
+            completion(.failure(.badURL(foursquareEndpoint)))
+            return
+        }
+        
+        let request = URLRequest(url: url)
+
+        NetworkHelper.shared.performDataTask(with: request) { (result) in
+            switch result {
+            case .failure(let appError):
+                completion(.failure(.networkClientError(appError)))
+            case .success(let data):
+                do {
+                    let foursquareSearch = try JSONDecoder().decode(FoursquareSearch.self, from: data)
+                    let venues = foursquareSearch.response.venues
+                    completion(.success(venues))
+                } catch {
+                    completion(.failure(.decodingError(error)))
+                }
+            }
+        }
+    }
+}

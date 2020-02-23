@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct FoursquareSearch: Codable {
+    let response: Venues
+}
+
 struct Venues: Codable {
     let venues: [Venue]
 }

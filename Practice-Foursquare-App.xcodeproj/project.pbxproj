@@ -20,6 +20,7 @@
 		02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA42401FD3000211C0F /* UserCollectionsController.swift */; };
 		02699BA72401FD8000211C0F /* TheMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA62401FD8000211C0F /* TheMapView.swift */; };
 		02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA82401FDC700211C0F /* UserCollectionsView.swift */; };
+		02699BAB240210B400211C0F /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BAA240210B400211C0F /* FoursquareAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		02699BA42401FD3000211C0F /* UserCollectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsController.swift; sourceTree = "<group>"; };
 		02699BA62401FD8000211C0F /* TheMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMapView.swift; sourceTree = "<group>"; };
 		02699BA82401FDC700211C0F /* UserCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsView.swift; sourceTree = "<group>"; };
+		02699BAA240210B400211C0F /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		02699B9C2401F95500211C0F /* APIClients */ = {
 			isa = PBXGroup;
 			children = (
+				02699BAA240210B400211C0F /* FoursquareAPIClient.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */,
 				02699B9B2401F8E800211C0F /* FoursquareSearch.swift in Sources */,
+				02699BAB240210B400211C0F /* FoursquareAPIClient.swift in Sources */,
 				02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */,
 				02699BA32401FAED00211C0F /* MapViewController.swift in Sources */,
 				02699B732401F63A00211C0F /* AppDelegate.swift in Sources */,

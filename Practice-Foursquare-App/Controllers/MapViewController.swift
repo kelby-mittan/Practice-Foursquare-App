@@ -33,6 +33,8 @@ class MapViewController: UIViewController {
     private var locationSearch = ""
     private var venueSearch = ""
     
+    public var annotations = [MKPointAnnotation]()
+    
     override func loadView() {
         view = theMapView
     }
@@ -40,17 +42,26 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        theMapView.backgroundColor = .systemTeal
+        theMapView.backgroundColor = .systemBackground
         setupNavBar()
         theMapView.mapView.delegate = self
         theMapView.locationSearchBar.delegate = self
+//        venueSearchBar.delegate = self
 //        loadVenues()
     }
     
     private func setupNavBar() {
-        navigationItem.setRightBarButton(menuButton, animated: true)
-        navigationItem.titleView = venueSearchBar
-        venueSearchBar.delegate = self
+//        navigationItem.setRightBarButton(menuButton, animated: true)
+//        navigationItem.titleView = venueSearchBar
+        
+        let searchController = UISearchController()
+//        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "search venues"
+        self.navigationItem.searchController = searchController
+        self.navigationItem.setRightBarButton(menuButton, animated: true)
+        self.definesPresentationContext = true
+        searchController.delegate = self
     }
     
     @objc private func menuButtonPressed(_ sender: UIBarButtonItem) {
@@ -74,8 +85,8 @@ class MapViewController: UIViewController {
         }
     }
     
-    private func makeAnnotations() -> [MKPointAnnotation] {
-        var annotations = [MKPointAnnotation]()
+    private func makeAnnotations() {
+//        var annotations = [MKPointAnnotation]()
         for venue in venues {
             
             let coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
@@ -86,15 +97,29 @@ class MapViewController: UIViewController {
             annotations.append(annotation)
         }
         dump(annotations)
-        return annotations
+//        return annotations
     }
     
     private func loadMapView() {
-        let annotations = makeAnnotations()
+        makeAnnotations()
         theMapView.mapView.addAnnotations(annotations)
         theMapView.mapView.showAnnotations(annotations, animated: true)
     }
     
+}
+
+extension MapViewController: UISearchControllerDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchBarSearchButtonClicked")
+    }
+    
+    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+        print("searchBarResultsListButtonClicked")
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        print("updateSearchResults")
+    }
 }
 
 extension MapViewController: UISearchBarDelegate {
@@ -119,16 +144,25 @@ extension MapViewController: UISearchBarDelegate {
         print("end editing")
         return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("text field is \(textField.text ?? "empty")")
+    }
 }
 
 extension MapViewController: UISearchTextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        venueSearch = textField.text ?? ""
+        venueSearch = textField.text?.lowercased() ?? ""
         loadVenues(city: venueSearch)
+        textField.text = ""
         print("search")
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        annotations.removeAll()
     }
 }
 

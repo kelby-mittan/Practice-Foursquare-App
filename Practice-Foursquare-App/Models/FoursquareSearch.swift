@@ -24,7 +24,7 @@ struct Venue: Codable {
 
 struct LocationInfo: Codable {
     let address: String
-    let crossStreet: String
+    let crossStreet: String?
     let lat: Double
     let lng: Double
 }

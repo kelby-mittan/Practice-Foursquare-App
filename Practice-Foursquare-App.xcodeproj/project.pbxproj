@@ -21,6 +21,7 @@
 		02699BA72401FD8000211C0F /* TheMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA62401FD8000211C0F /* TheMapView.swift */; };
 		02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA82401FDC700211C0F /* UserCollectionsView.swift */; };
 		02699BAB240210B400211C0F /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BAA240210B400211C0F /* FoursquareAPIClient.swift */; };
+		02699BF5240238BB00211C0F /* CoreLocationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BF4240238BB00211C0F /* CoreLocationSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		02699BA62401FD8000211C0F /* TheMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMapView.swift; sourceTree = "<group>"; };
 		02699BA82401FDC700211C0F /* UserCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsView.swift; sourceTree = "<group>"; };
 		02699BAA240210B400211C0F /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIClient.swift; sourceTree = "<group>"; };
+		02699BF4240238BB00211C0F /* CoreLocationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				02699BAA240210B400211C0F /* FoursquareAPIClient.swift */,
+				02699BF4240238BB00211C0F /* CoreLocationSession.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */,
 				02699BA32401FAED00211C0F /* MapViewController.swift in Sources */,
 				02699B732401F63A00211C0F /* AppDelegate.swift in Sources */,
+				02699BF5240238BB00211C0F /* CoreLocationSession.swift in Sources */,
 				02699B752401F63A00211C0F /* SceneDelegate.swift in Sources */,
 				02699BA72401FD8000211C0F /* TheMapView.swift in Sources */,
 				02699BA12401FA4D00211C0F /* TabBarController.swift in Sources */,

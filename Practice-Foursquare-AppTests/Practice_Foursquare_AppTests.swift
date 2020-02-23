@@ -16,13 +16,14 @@ class Practice_Foursquare_AppTests: XCTestCase {
 //        let expectedLatitude = 40.745835357994196
         let expTitle = "Ruth's Chris Steak House"
         
-        FoursquareAPIClient.getVenues(location: "newyork", search: "steakhouse") { (result) in
+        FoursquareAPIClient.getVenues(location: "new york", search: "steak house") { (result) in
             switch result {
             case .failure(let error):
                 XCTFail("error: \(error)")
             case .success(let venues):
-                let count = venues.count
-                XCTAssertEqual(50, count)
+                let title = venues.first?.name
+                dump(venues)
+                XCTAssertEqual(expTitle, title)
             }
         }
     }

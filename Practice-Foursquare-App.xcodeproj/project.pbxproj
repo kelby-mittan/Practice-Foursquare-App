@@ -22,6 +22,10 @@
 		02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BA82401FDC700211C0F /* UserCollectionsView.swift */; };
 		02699BAB240210B400211C0F /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BAA240210B400211C0F /* FoursquareAPIClient.swift */; };
 		02699BF5240238BB00211C0F /* CoreLocationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BF4240238BB00211C0F /* CoreLocationSession.swift */; };
+		02699BF724034D6100211C0F /* MediumMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BF624034D6100211C0F /* MediumMenu.swift */; };
+		02699BFA24035BB700211C0F /* UsersCollectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02699BF924035BB700211C0F /* UsersCollectionsCell.swift */; };
+		1E3F5020274AA1B3675F2325 /* Pods_Practice_Foursquare_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5CD5F563E768D4ED07CFBE /* Pods_Practice_Foursquare_App.framework */; };
+		CE3E87A286478EBFA0F420D8 /* Pods_Practice_Foursquare_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E800690D2C37AAA3BC8E244 /* Pods_Practice_Foursquare_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		02699BA82401FDC700211C0F /* UserCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionsView.swift; sourceTree = "<group>"; };
 		02699BAA240210B400211C0F /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPIClient.swift; sourceTree = "<group>"; };
 		02699BF4240238BB00211C0F /* CoreLocationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationSession.swift; sourceTree = "<group>"; };
+		02699BF624034D6100211C0F /* MediumMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumMenu.swift; sourceTree = "<group>"; };
+		02699BF924035BB700211C0F /* UsersCollectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionsCell.swift; sourceTree = "<group>"; };
+		188BCBF37EAA571C99704C1F /* Pods-Practice-Foursquare-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Foursquare-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Practice-Foursquare-AppTests/Pods-Practice-Foursquare-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E800690D2C37AAA3BC8E244 /* Pods_Practice_Foursquare_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_Foursquare_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5CD5F563E768D4ED07CFBE /* Pods_Practice_Foursquare_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_Foursquare_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		740611E8CC90CE1A39B2352A /* Pods-Practice-Foursquare-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Foursquare-App.release.xcconfig"; path = "Target Support Files/Pods-Practice-Foursquare-App/Pods-Practice-Foursquare-App.release.xcconfig"; sourceTree = "<group>"; };
+		7BD5A56840840FE2E55A6B30 /* Pods-Practice-Foursquare-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Foursquare-App.debug.xcconfig"; path = "Target Support Files/Pods-Practice-Foursquare-App/Pods-Practice-Foursquare-App.debug.xcconfig"; sourceTree = "<group>"; };
+		80A3651EACC2CDFC2E5C5204 /* Pods-Practice-Foursquare-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Foursquare-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Practice-Foursquare-AppTests/Pods-Practice-Foursquare-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02699B9F2401FA1A00211C0F /* ImageKit in Frameworks */,
+				1E3F5020274AA1B3675F2325 /* Pods_Practice_Foursquare_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3E87A286478EBFA0F420D8 /* Pods_Practice_Foursquare_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,8 @@
 				02699B712401F63A00211C0F /* Practice-Foursquare-App */,
 				02699B882401F63F00211C0F /* Practice-Foursquare-AppTests */,
 				02699B702401F63A00211C0F /* Products */,
+				58E6649FD9B817FE325733ED /* Pods */,
+				08140EE902D5DBD61357CC9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +111,7 @@
 		02699B712401F63A00211C0F /* Practice-Foursquare-App */ = {
 			isa = PBXGroup;
 			children = (
+				02699BF824035B7400211C0F /* Cells */,
 				02699B9C2401F95500211C0F /* APIClients */,
 				02699B992401F8CE00211C0F /* Models */,
 				02699B962401F6BE00211C0F /* Controllers */,
@@ -122,6 +139,7 @@
 				02699B972401F86300211C0F /* configure.swift */,
 				02699B7B2401F63F00211C0F /* Assets.xcassets */,
 				02699B7D2401F63F00211C0F /* LaunchScreen.storyboard */,
+				02699BF624034D6100211C0F /* MediumMenu.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +180,34 @@
 			path = APIClients;
 			sourceTree = "<group>";
 		};
+		02699BF824035B7400211C0F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				02699BF924035BB700211C0F /* UsersCollectionsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		08140EE902D5DBD61357CC9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B5CD5F563E768D4ED07CFBE /* Pods_Practice_Foursquare_App.framework */,
+				3E800690D2C37AAA3BC8E244 /* Pods_Practice_Foursquare_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58E6649FD9B817FE325733ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BD5A56840840FE2E55A6B30 /* Pods-Practice-Foursquare-App.debug.xcconfig */,
+				740611E8CC90CE1A39B2352A /* Pods-Practice-Foursquare-App.release.xcconfig */,
+				80A3651EACC2CDFC2E5C5204 /* Pods-Practice-Foursquare-AppTests.debug.xcconfig */,
+				188BCBF37EAA571C99704C1F /* Pods-Practice-Foursquare-AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02699B8E2401F63F00211C0F /* Build configuration list for PBXNativeTarget "Practice-Foursquare-App" */;
 			buildPhases = (
+				79099A1B2E8EF331F0E01AC8 /* [CP] Check Pods Manifest.lock */,
 				02699B6B2401F63A00211C0F /* Sources */,
 				02699B6C2401F63A00211C0F /* Frameworks */,
 				02699B6D2401F63A00211C0F /* Resources */,
+				FB26BEFEA3B17561E32DAE23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02699B912401F63F00211C0F /* Build configuration list for PBXNativeTarget "Practice-Foursquare-AppTests" */;
 			buildPhases = (
+				301C99D764F0D41F5E98DB60 /* [CP] Check Pods Manifest.lock */,
 				02699B812401F63F00211C0F /* Sources */,
 				02699B822401F63F00211C0F /* Frameworks */,
 				02699B832401F63F00211C0F /* Resources */,
@@ -263,12 +312,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		301C99D764F0D41F5E98DB60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practice-Foursquare-AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79099A1B2E8EF331F0E01AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practice-Foursquare-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB26BEFEA3B17561E32DAE23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practice-Foursquare-App/Pods-Practice-Foursquare-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Practice-Foursquare-App/Pods-Practice-Foursquare-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practice-Foursquare-App/Pods-Practice-Foursquare-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02699B6B2401F63A00211C0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				02699BA92401FDC700211C0F /* UserCollectionsView.swift in Sources */,
+				02699BF724034D6100211C0F /* MediumMenu.swift in Sources */,
 				02699B9B2401F8E800211C0F /* FoursquareSearch.swift in Sources */,
 				02699BAB240210B400211C0F /* FoursquareAPIClient.swift in Sources */,
 				02699BA52401FD3000211C0F /* UserCollectionsController.swift in Sources */,
@@ -277,6 +391,7 @@
 				02699BF5240238BB00211C0F /* CoreLocationSession.swift in Sources */,
 				02699B752401F63A00211C0F /* SceneDelegate.swift in Sources */,
 				02699BA72401FD8000211C0F /* TheMapView.swift in Sources */,
+				02699BFA24035BB700211C0F /* UsersCollectionsCell.swift in Sources */,
 				02699BA12401FA4D00211C0F /* TabBarController.swift in Sources */,
 				02699B982401F86300211C0F /* configure.swift in Sources */,
 			);
@@ -428,6 +543,7 @@
 		};
 		02699B8F2401F63F00211C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD5A56840840FE2E55A6B30 /* Pods-Practice-Foursquare-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +562,7 @@
 		};
 		02699B902401F63F00211C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740611E8CC90CE1A39B2352A /* Pods-Practice-Foursquare-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +581,7 @@
 		};
 		02699B922401F63F00211C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A3651EACC2CDFC2E5C5204 /* Pods-Practice-Foursquare-AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +604,7 @@
 		};
 		02699B932401F63F00211C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188BCBF37EAA571C99704C1F /* Pods-Practice-Foursquare-AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

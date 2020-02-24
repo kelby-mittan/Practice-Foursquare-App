@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import MediumMenu
 
 class MapViewController: UIViewController {
     
@@ -44,6 +45,7 @@ class MapViewController: UIViewController {
         
         theMapView.backgroundColor = .systemBackground
         setupNavBar()
+        
         theMapView.mapView.delegate = self
         theMapView.locationSearchBar.delegate = self
 //        venueSearchBar.delegate = self
@@ -51,21 +53,42 @@ class MapViewController: UIViewController {
     }
     
     private func setupNavBar() {
-//        navigationItem.setRightBarButton(menuButton, animated: true)
-//        navigationItem.titleView = venueSearchBar
+        navigationItem.setRightBarButton(menuButton, animated: true)
+        navigationItem.titleView = venueSearchBar
         
-        let searchController = UISearchController()
-//        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "search venues"
-        self.navigationItem.searchController = searchController
-        self.navigationItem.setRightBarButton(menuButton, animated: true)
-        self.definesPresentationContext = true
-        searchController.delegate = self
+//        let searchController = UISearchController()
+//        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        searchController.searchBar.placeholder = "search venues"
+//        self.navigationItem.searchController = searchController
+//        self.navigationItem.setRightBarButton(menuButton, animated: true)
+//        self.definesPresentationContext = true
+//        searchController.delegate = self
     }
+    
+//    private func mediumMenu() {
+//
+//        let item1 = MediumMenuItem(title: "HeyNow")
+//        let menu = MediumMenu(items: [item1], forViewController: self)
+//        menu.textColor = .gray                      // Default is UIColor(red:0.98, green:0.98, blue:0.98, alpha:1).
+////        menu.highLightTextColor =                 // Default is UIColor(red:0.57, green:0.57, blue:0.57, alpha:1).
+//        menu.backgroundColor = .systemTeal                 // Default is UIColor(red:0.05, green:0.05, blue:0.05, alpha:1).
+//        menu.titleFont = UIFont(name: "AvenirNext-Regular", size: 30) // Default is UIFont(name: "HelveticaNeue-Light", size: 28).
+//        menu.titleAlignment = .center                                 // Default is .Left.
+//        menu.height = 370                                             // Default is 466.
+//        menu.bounceOffset = 10                                        // Default is 0.
+////        menu.velocityTreshold = 700                                   // Default is 1000.
+//        menu.panGestureEnable = false                                 // Default is true.
+////        menu.highLighedIndex = 3                                      // Default is 1.
+//        menu.heightForRowAtIndexPath = 40                             // Default is 57.
+//        menu.heightForHeaderInSection = 0                             // Default is 30.
+//        menu.enabled = false                                          // Default is true.
+//        menu.animationDuration = 0.33
+//    }
     
     @objc private func menuButtonPressed(_ sender: UIBarButtonItem) {
         print("menu button pressed")
+//        mediumMenu()
     }
     
     private func loadVenues(city: String) {
